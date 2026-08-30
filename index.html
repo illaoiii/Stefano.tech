@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Update this block if your name/role/preview image ever changes
+         (see README.md "SEO & social preview" section). -->
+    <title>Stefano Ilao | Aspiring Penetration Tester</title>
+    <meta
+      name="description"
+      content="Portfolio of Stefano Nathaniel Y. Ilao — BS Computer Engineering graduate and aspiring Penetration Tester / Red Team Operator, with hands-on projects in networking, embedded systems, and machine learning."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Stefano Ilao | Aspiring Penetration Tester" />
+    <meta
+      property="og:description"
+      content="Portfolio of Stefano Nathaniel Y. Ilao — BS Computer Engineering graduate and aspiring Penetration Tester / Red Team Operator, with hands-on projects in networking, embedded systems, and machine learning."
+    />
+    <meta property="og:image" content="og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Runs before React mounts so the correct theme applies with no flash of
+         the wrong colors. Keep this in sync with the storage key used in
+         src/hooks/ThemeContext.js. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("portfolio-theme");
+          if (stored === "light") {
+            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.add("light");
+          }
+        } catch (e) {
+          /* localStorage unavailable — default dark class from the html tag stays */
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
+</html>
